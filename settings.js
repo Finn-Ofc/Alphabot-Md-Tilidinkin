@@ -57,13 +57,13 @@ global.timezone = 'Asia/Jakarta' //  timezone wib
 global.premium = ['6285895789545'] //premium user
 global.owner = ["6285895789545", "6285850109172"] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "6285895789545" // nomor wa kalian
-global.ownernomerr = "6285850109172"+ownernomer //nmr wa kalian
+global.ownernomerr = "6285850109172" //nmr wa kalian
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome = "https://telegra.ph/file/edca4b513ddf29fd52c0e.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.thumbGif = 'https://telegra.ph/file/e90bef3779d3c5812a5d1.mp4'
-global.packname = '★ᴹᴿ᭄ Finn-Botzོ ☭' + botname //sticker wm ubah
-global.author = '© Powered by Android' + ownername //sticker wm ganti nama kalian
+global.packname = '★ᴹᴿ᭄ Finn-Botzོ ☭' //sticker wm ubah
+global.author = '© Powered by Android' //sticker wm ganti nama kalian
 global.sessionName = 'session'
 //type menu for menu
 global.typemenu = 'templateImage' //
