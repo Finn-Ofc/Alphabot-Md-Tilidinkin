@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm install -g pm
+RUN npm install && npm install -g pm2
 
 COPY . .
 
