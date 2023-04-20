@@ -3398,13 +3398,26 @@ ${lang.listMenu2(prefix)}`
             }
          }
          break
-         /*case 'allmenu': {
-            await sendButLoc(alpha, m.chat, `Hai kak ${pushname} 👋,  *${botname}* ` + '\n\n' + lang.listMenu(time, salam, pushname, prefix), '©' + ownername, pp_bot, buttonDefault3, {
-               userJid: m.chat,
-               quoted: m
-            })
+         case 'allmenu': {
+            if (db.data.settings[botNumber].typemenu2 == 'image') {
+               sendButImage(alpha, m.chat, sender, buttonDefault4, `Selamat ${salam} ${pushname} 😊\n\n╭─⬣「 _*INFO BOT*_ 」⬣\n│ *Prefix* :  ${prefix} \n│ *Name* : ${botname}\n│ *Owner* : @${ownernomer.split("@")[0]}\n│ *Mode* : ${alpha.public ? 'Public-Mode' : 'Self-Mode'}\n│ *Runtime* : ${runtime(process.uptime())}\n│ *Lib* : Baileys-Md@5.0.0\n╰─⬣` + '\n\n' + lang.info(prefix), `© ${ownername}`, [sender, ownernomer + '@s.whatsapp.net'], {
+                  quoted: m
+               })
+            }
+            if (db.data.settings[botNumber].typemenu2 == 'location') {
+               Alpha.sendButLoc(alpha, m.chat, `Selamat ${salam} ${pushname} 😊\n\n╭─⬣「 _*INFO BOT*_ 」⬣\n│ *Prefix* :  ${prefix} \n│ *Name* : ${botname}\n│ *Owner* : @${ownernomer.split("@")[0]}\n│ *Mode* : ${alpha.public ? 'Public-Mode' : 'Self-Mode'}\n│ *Runtime* : ${runtime(process.uptime())}\n│ *Lib* : Baileys-Md@5.0.0\n╰─⬣` + '\n\n' + lang.info(prefix), '©' + ownername, pp_bot, buttonDefault3, [sender, ownernomer + '@s.whatsapp.net'], {
+                  userJid: m.chat,
+                  quoted: m
+               })
+            }
+            if (db.data.settings[botNumber].typemenu2 == 'templateLocation') {
+               Alpha.send5ButLoc(alpha, reSize, m.chat, `Selamat ${salam} ${pushname} 😊\n\n╭─⬣「 _*INFO BOT*_ 」⬣\n│ *Prefix* :  ${prefix} \n│ *Name* : ${botname}\n│ *Owner* : @${ownernomer.split("@")[0]}\n│ *Mode* : ${alpha.public ? 'Public-Mode' : 'Self-Mode'}\n│ *Runtime* : ${runtime(process.uptime())}\n│ *Lib* : Baileys-Md@5.0.0\n╰─⬣` + '\n\n' + lang.info(prefix), '©' + ownername, pp_bot, buttonDefault2, [sender, ownernomer + '@s.whatsapp.net'], {quoted: m})
+            }
+            if (db.data.settings[botNumber].typemenu2 == 'templateImage') {
+               Alpha.send5ButImg(alpha, m.chat, `Selamat ${salam} ${pushname} 😊\n\n╭─⬣「 _*INFO BOT*_ 」⬣\n│ *Prefix* :  ${prefix} \n│ *Name* : ${botname}\n│ *Owner* : @${ownernomer.split("@")[0]}\n│ *Mode* : ${alpha.public ? 'Public-Mode' : 'Self-Mode'}\n│ *Runtime* : ${runtime(process.uptime())}\n│ *Lib* : Baileys-Md@5.0.0\n╰─⬣` + '\n\n' + lang.info(prefix), '©' + ownername, pp_bot, buttonDefault2, [sender, ownernomer + '@s.whatsapp.net'], {quoted: m})
+            }
          }
-         break*/
+         break
          case 'infocmd':
          case 'infomenu': {
             if (db.data.settings[botNumber].typemenu2 == 'image') {
